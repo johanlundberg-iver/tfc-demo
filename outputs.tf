@@ -4,3 +4,6 @@ output "random_name_1" {
 output "random_name_2" {
     value = random_id.server2.b64_std
 }
+output "random_name_3" {
+    value = random_id.server3.b64_std
+}
