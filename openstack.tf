@@ -16,7 +16,7 @@ resource "openstack_compute_instance_v2" "ubuntu_server" {
   key_pair = "johan"
   security_groups = ["default"]
   network {
-    name = "tfc_net"
+    name = openstack_networking_network_v2.vm_net.id
   }
 }
 
